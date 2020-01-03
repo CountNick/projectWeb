@@ -1,0 +1,749 @@
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Importeren font flixbus */
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+
+@font-face {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------
+
+/*Start Navigatiebalk*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+nav {
+	top: 0;
+	background-color: #73d700;
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	margin-top: -3.62rem;
+	transition: 0.3s;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+li img {
+	height: 2.2em;
+	padding: .2em 1em .2em 1em;
+}
+
+ul div {
+
+	display: flex;
+	justify-content: flex-start;
+}
+
+.ingelogd li:first-of-type {
+	flex-grow: 1;
+}
+
+.ingelogd li:nth-child(2) {
+	flex-grow: 16;
+}
+
+.ingelogd li:nth-child(3) {
+	flex-grow: 20;
+}
+
+.ingelogd li:nth-child(4) {
+	flex-grow: 1;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Einde Navigatiebalk*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Font toepassen op body van de pagina */
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Start Footer*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+footer img {
+
+	width: 100%;
+	object-fit: cover;
+
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Einde Footer*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+h2 {
+	color: #444444;
+}
+
+header {
+	position: relative;
+	padding-top: 1rem;
+	margin-bottom: 3rem;
+}
+
+header h1 {
+
+	color: white;
+	text-align: center;
+	padding-top: .6em;
+	padding-bottom: .3em;
+	background-color: #444444;
+
+
+}
+
+
+
+main button {
+	margin-top: .5rem;
+	border-style: none;
+	border-radius: .5rem;
+	background-color: #ffad01;
+	font-size: 1em;
+	color: white;
+	padding: 1rem;
+	position: static;
+	width: 45vw;
+
+}
+
+#center {
+	display: flex;
+	justify-content: space-evenly;
+	white-space: nowrap;
+}
+
+section {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: flex-end;
+	flex-wrap: wrap;
+
+}
+
+section h2 {
+	padding-left: 2vw;
+	display: block;
+	align-self: flex-start;
+	width: 100%;
+}
+
+article {
+	margin: 0;
+	position: relative;
+	height: 25vh;
+	width: 45vw;
+	min-width: 10rem;
+	max-width: 15rem;
+	margin-bottom: 4rem;
+	display: block;
+}
+
+
+article h3 {
+	position: absolute;
+	background-color: #73d700;
+	width: 100%;
+	color: white;
+	text-align: center;
+	margin-top: 8rem;
+	padding: .2rem 0 .2rem 0;
+	border-bottom-right-radius: .5em;
+	border-bottom-left-radius: .5em;
+	display: block;
+}
+
+
+article a > img {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+	border-radius: .5em;
+}
+
+h3:hover {
+	margin-top: 0;
+	padding-bottom: 8rem;
+	transition: 0.3s;
+	border-radius: .5em .5em .5em .5em;
+
+
+}
+
+article > img:first-of-type {
+
+	margin-top: 9.9rem;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+article > img:nth-of-type(2) {
+
+	margin-top: -2.2rem;
+	margin-left: 5rem;
+	width: 1.2rem;
+	height: 1.2rem;
+	display: block;
+}
+
+article > p:first-of-type {
+	padding-top: .5rem;
+	width: 100%;
+	text-align: center;
+	color: white;
+	z-index: 1;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	transition: .5s;
+}
+
+article h3:hover ~ p:first-of-type {
+	visibility: visible;
+	opacity: 1;
+}
+
+article > p:nth-of-type(2) {
+	margin-left: 1.5rem;
+	margin-top: -1.5rem;
+
+
+}
+
+article p:nth-of-type(3) {
+
+	margin-left: 6.5rem;
+	margin-top: -1.1rem;
+
+}
+
+.verhaal img {
+
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+}
+
+.verhaal {
+	max-width: none;
+	width: 100%;
+	height: 100%;
+}
+
+.verhaal img {
+
+	width: 100%;
+	height: 100%;
+	border-radius: 0 0 0 0;
+}
+
+.verhaal h1 {
+	position: absolute;
+	z-index: 1;
+	bottom: -2rem;
+	width: 100%;
+	text-align: center;
+	color: white;
+	background-color: #73d700;
+	padding: 1rem;
+}
+
+.verhaal button {
+	display: block;
+	/*	position: absolute;*/
+	left: 1rem;
+	top: 5rem;
+	border-radius: 50%;
+	width: 4rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	background-color: #73d700;
+}
+
+.verhaal button > img {
+	/*	padding: 1rem;*/
+	width: 2rem;
+	margin: auto;
+}
+
+.verhaalbutton {
+	position: absolute;
+	background-color: transparent;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 4rem;
+	z-index: 1;
+
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Styling van de forms*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+.filter legend {
+	display: none;
+}
+
+form {
+
+	margin: 0 auto;
+	text-align: center;
+}
+
+form button {
+	margin: auto;
+	display: block;
+}
+
+input {
+	border-radius: .5rem;
+	border-style: solid;
+	border-color: #444444;
+}
+
+
+.filter {
+	border-style: none !important;
+}
+
+
+
+
+
+fieldset:invalid {
+	border-style: none;
+}
+
+fieldset:valid {
+	border-style: solid;
+	border-color: #73d700;
+	border-radius: .5rem;
+	border-width: .2rem;
+	transition: .5s;
+}
+
+input:valid {
+	background-color: #73d701;
+	border-style: solid;
+	border-color: #73d700;
+	color: white;
+	transition: .5s;
+}
+
+input:invalid {
+
+	border-color: red;
+	border-style: solid;
+
+}
+
+input[type=number] {
+	margin-bottom: 1rem;
+	width: 10vw;
+	background-color: white;
+	color: #444444;
+}
+
+input[type=search] {
+	border-style: none;
+	border-radius: .5rem;
+	padding: .5rem;
+	background-color: white;
+	color: #444444;
+
+}
+
+.zoekknop {
+	border-style: none;
+	padding: .5rem;
+	color: white;
+	background-color: #ffad01;
+	border-radius: .5em;
+	display: inline;
+}
+
+
+legend:first-of-type {
+	color: #73d700;
+	visibility: hidden;
+}
+
+
+
+
+label {
+	display: block;
+}
+
+.filter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*select{
+	visibility: hidden;
+	transition: 0.3s;
+}*/
+
+.sort fieldset {
+	border-style: none;
+}
+
+.sort {
+	visibility: hidden;
+	transition: 0.3s;
+}
+
+/*legend{
+	display: block;
+	visibility: visible;
+}*/
+
+li p {
+	display: none;
+
+}
+
+select {
+	margin-bottom: 1rem;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Einde styling van de forms */
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------*/
+
+/*Start AnimatieFilterMenu*/
+
+/*-------------------*/
+
+.loginpagina {
+	margin-top: 0;
+}
+
+
+main {
+	margin-top: -25rem;
+	transition: 0.3s;
+}
+
+.dropdown {
+
+	margin-top: 0;
+}
+
+
+
+div {
+	display: block;
+	background-color: white;
+	margin-top: -1.8rem;
+	transition: 0.3s;
+}
+
+.fadeIn fieldset {
+	border-style: none;
+}
+
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fadeOut {
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+/*-------------------
+
+/*Einde AnimatieFilterMenu*/
+
+/*-------------------*/
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+
+	header {
+		margin-bottom: 1rem;
+	}
+
+
+
+
+}
+
+@media (min-width: 360px) {
+
+	article > p:first-of-type {
+		font-size: .9rem;
+	}
+
+	.loginpagina form {
+
+		font-size: 2rem;
+	}
+
+	.loginpagina form > fieldset > input {
+		padding: 1rem;
+		font-size: 1rem;
+	}
+
+	.loginpagina > form fieldset > button {
+		padding: 1rem;
+	}
+
+	/*	.loginpagina form>fieldset>input[type=email],input[type=email],inp*/
+	#smartphoneformaat {
+		display: block;
+		margin: 0;
+		height: 100%;
+		width: 100%;
+	}
+
+
+	#tabletformaat {
+		display: none;
+	}
+
+	#desktopformaat {
+		display: none;
+	}
+
+}
+
+@media (min-width: 767px) {
+
+	header {
+		width: 100%;
+		padding-top: 3em;
+		padding-bottom: 11em;
+		background-image: url(../img/bus2.jpg);
+		background-size: cover;
+		background-position: 0 65%;
+		position: relative;
+	}
+
+	header h1 {
+		margin-top: -.4em;
+	}
+
+	main {
+
+		margin-top: -24.7rem;
+		transition: 0.3s;
+
+	}
+
+	li p {
+		display: block;
+		position: absolute;
+		margin-left: 4rem;
+		margin-top: -2rem;
+		color: white;
+
+	}
+
+
+	.verhaalmain {
+
+		margin-top: 5rem;
+	}
+
+	#smartphoneformaat {
+		display: none;
+	}
+
+	#tabletformaat {
+		display: block;
+		margin: 0;
+		height: 100%;
+		width: 100%;
+	}
+
+	#desktopformaat {
+		display: none;
+	}
+}
+
+@media (min-width: 1039px) {
+
+	header {
+		width: 100%;
+		padding-top: 3em;
+		padding-bottom: 11em;
+		background-image: url(../img/bus2.jpg);
+		background-size: cover;
+		background-position: 0 65%;
+		position: relative;
+		margin-bottom: 2rem;
+	}
+
+	header h1 {
+		color: #444444;
+		background-color: rgba(255, 255, 255, 0.7);
+		border-radius: .3em;
+		text-align: center;
+		margin-left: 2rem;
+		margin-right: auto;
+		width: 40%;
+		margin-top: 9.3em;
+	}
+
+	article {
+		width: 30vw;
+	}
+
+	#center button {
+		display: none;
+	}
+
+	.filter div > button {
+		display: none;
+	}
+
+	main {
+		margin-top: 0;
+	}
+
+	select {
+		visibility: visible;
+	}
+
+	.filter div {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#smartphoneformaat {
+		display: none;
+	}
+
+	#tabletformaat {
+		display: none;
+	}
+
+	#desktopformaat {
+		display: block;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.loginpagina > form {
+		font-size: 1rem;
+	}
+
+	.loginpagina > form > input[type=text] {
+		font-size: 1rem;
+	}
+
+	.loginpagina > form fieldset > button {
+		width: 23%;
+	}
+
+
+
+
+
+}
